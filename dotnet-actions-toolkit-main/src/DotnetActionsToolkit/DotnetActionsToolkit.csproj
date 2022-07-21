@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <VersionMajor Condition="'$(VersionMajor)' == ''">1</VersionMajor>
+    <VersionMinor Condition="'$(VersionMinor)' == ''">1</VersionMinor>
+    <VersionPatch Condition="'$(VersionPatch)' == ''">0</VersionPatch>
+    <Version Condition="'$(Version)' == ''">$(VersionMajor).$(VersionMinor).$(VersionPatch)</Version>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>DotnetActionsToolkit</PackageId>
+    <Authors>Dylan Smith</Authors>
+    <Company>OctoGeeks</Company>
+    <PackageTags>GitHub;Actions;</PackageTags>
+    <PackageProjectUrl>https://github.com/OctoGeeks/dotnet-actions-toolkit</PackageProjectUrl>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/OctoGeeks/dotnet-actions-toolkit</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SemanticVersioning" Version="1.3.0" />
+  </ItemGroup>
+
+</Project>
